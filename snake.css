@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    overflow: hidden;     /* Prevents scrolling */
+    touch-action: none;   /* Prevents default touch behaviors like zooming */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling in iOS */
+}
+
+
+#game-board {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    position: relative;
+}
+
+.snake-part {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    position: absolute;
+}
+
+.food {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+}
+
+@media (max-width: 320px) {
+    #game-board {
+        width: 285px;
+        height: 285px;
+    }
+}
+
+@media (max-width: 480px) {
+    #game-board {
+        width: 285px;
+        height: 285px;
+    }
+}
